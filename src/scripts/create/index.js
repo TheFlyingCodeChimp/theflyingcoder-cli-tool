@@ -10,6 +10,7 @@ import parseArguments from './parseArguments';
 import validate from './validate';
 import download from './download';
 import extract from './extract';
+import camel from '../camelMessages';
 
 const packageJson = require('../../../package.json');
 
@@ -34,9 +35,14 @@ const create = async (args) => {
                 console.log(chalk.cyan('Running initialisation script...'));
                 const script = require(`${destination}/${template.initialiseScript}`);
                 await script(options);
+                console.log(chalk.green('Initialisation script completed'));
+                console.log(chalk.cyan('Removing initialisation script from project...'));
                 fs.unlinkSync(`${destination}/${template.initialiseScript}`);
+                console.log(chalk.green('Script removed'));
             }
         });
+
+        camel.success('Project creation complete... Happy coding!!')
     } catch (e) {
         rimraf.sync(destination);
         process.exit(1);
