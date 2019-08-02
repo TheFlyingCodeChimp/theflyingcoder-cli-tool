@@ -1,0 +1,52 @@
+{
+    "name": "theflyingcoder-cli-tool",
+    "version": "1.0.0",
+    "description": "A CLI Tool for <Insert Name>, to provide automation on common scenarios",
+    "files": [
+        "bin/",
+        "src/"
+    ],
+    "main": "bin/ddapac.js",
+    "bin": {
+        "ddapac": "bin/ddapac.js"
+    },
+    "availableScripts": [
+        "create"
+    ],
+    "templates": [
+        {
+            "key": "razzle-jss",
+            "repo": "boilerplates",
+            "url": "https://github.com/TheFlyingCodeChimp/boilerplates",
+            "branch": "develop",
+            "initialiseScript": "jss-create.js"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TheFlyingCodeChimp/dd-cli.git"
+    },
+    "author": "Thomas Rowe",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/TheFlyingCodeChimp/dd-cli/issues"
+    },
+    "homepage": "https://github.com/TheFlyingCodeChimp/dd-cli#readme",
+    "dependencies": {
+        "arg": "^4.1.1",
+        "chalk": "^2.4.2",
+        "esm": "^3.2.25",
+        "extract-zip": "^1.6.7",
+        "fs": "^0.0.1-security",
+        "inquirer": "^6.5.0",
+        "ncp": "^2.0.0",
+        "os": "^0.1.1",
+        "path": "^0.12.7",
+        "request": "^2.88.0",
+        "rimraf": "^2.6.3",
+        "tmp": "^0.1.0"
+    },
+    "scripts": {
+        "default": "node ./bin/ddapac.js create new-project razzle-jss"
+    }
+}
