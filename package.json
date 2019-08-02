@@ -1,6 +1,6 @@
 {
     "name": "theflyingcoder-cli-tool",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A CLI Tool for <Insert Name>, to provide automation on common scenarios",
     "files": [
         "bin/",
