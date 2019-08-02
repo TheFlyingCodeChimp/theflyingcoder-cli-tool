@@ -24,14 +24,14 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TheFlyingCodeChimp/dd-cli.git"
+        "url": "git+https://github.com/TheFlyingCodeChimp/theflyingcoder-cli-tool.git"
     },
     "author": "Thomas Rowe",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/TheFlyingCodeChimp/dd-cli/issues"
+        "url": "https://github.com/TheFlyingCodeChimp/theflyingcoder-cli-tool/issues"
     },
-    "homepage": "https://github.com/TheFlyingCodeChimp/dd-cli#readme",
+    "homepage": "https://github.com/TheFlyingCodeChimp/theflyingcoder-cli-tool#readme",
     "dependencies": {
         "arg": "^4.1.1",
         "chalk": "^2.4.2",
@@ -45,8 +45,5 @@
         "request": "^2.88.0",
         "rimraf": "^2.6.3",
         "tmp": "^0.1.0"
-    },
-    "scripts": {
-        "default": "node ./bin/ddapac.js create new-project razzle-jss"
     }
 }
